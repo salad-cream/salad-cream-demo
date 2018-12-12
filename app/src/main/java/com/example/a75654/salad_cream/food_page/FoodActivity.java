@@ -48,7 +48,7 @@ public class FoodActivity extends AppCompatActivity{
         //设置Tab标题文字的颜色
         tabs.setTextColor(Color.BLACK);
         // 设置Tab标题文字的大小
-        tabs.setTextSize(45);
+        tabs.setTextSize(50);
         //设置Tab底部分割线的颜色
         tabs.setUnderlineColor(Color.TRANSPARENT);
         // 设置点击某个Tab时的背景色,设置为0时取消背景色
