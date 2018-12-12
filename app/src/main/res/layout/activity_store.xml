@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/scrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".second">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="商城"
+        android:textAllCaps="false"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="30sp"
+        app:fontFamily="monospace"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shopping"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/title"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+
+
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:src="@drawable/ad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+
+        <ImageView
+            android:id="@+id/imageButton8"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/apple" />
+
+        <ImageView
+            android:id="@+id/imageButton7"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/orange" />
+
+        <ImageView
+            android:id="@+id/imageButton6"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/pawpaw" />
+
+        <ImageView
+            android:id="@+id/imageButton5"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/pemelo" />
+
+        <ImageView
+            android:id="@+id/imageButton3"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/longan" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/LinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LinearLayout1">
+
+
+        <ImageView
+            android:id="@+id/imageButton10"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/broccoli" />
+
+        <ImageView
+            android:id="@+id/imageButton11"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/lettuce" />
+
+        <ImageView
+            android:id="@+id/imageButton12"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/cabbage" />
+
+        <ImageView
+            android:id="@+id/imageButton13"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/tomato" />
+
+        <ImageView
+            android:id="@+id/imageButton14"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/sweetpotato" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="今/日/特/价"
+        android:textColor="@color/red"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LinearLayout2" />
+
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <ImageView
+            android:id="@+id/sale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:src="@drawable/sale" />
+
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zespri佳沛 新西兰阳光金奇异果22-25个原箱装 特大22-25号果"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="产自纯洁新西兰，果王本色"
+
+                android:textColor="@color/colorAccent"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥ 189.90"
+
+                android:textColor="@color/colorRed"
+                android:textSize="24sp" />
+
+
+        </TableLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>
