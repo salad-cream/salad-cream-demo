@@ -12,7 +12,7 @@
         <activity android:name=".MainActivity">
         </activity>
 
-        <activity android:name=".food_page.FoodActivity" >
+        <activity android:name=".community.CommunityActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
