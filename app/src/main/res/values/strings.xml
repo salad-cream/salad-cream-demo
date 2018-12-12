@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">salad-cream</string>
+    <string name="my">我的</string>
+    <string name="MyCollection">我的收藏</string>
+    <string name="MyOrder">我的订单</string>
+    <string name="MyWallet">我的钱包</string>
+    <string name="CommentsReceived">我收到的评论</string>
+    <string name="CustomizedCourse">我定制的课程</string>
+    <string name="Share">分享</string>
+    <string name="Setting">设置</string>
+    <string name="Attention">关注</string>
+    <string name="FansString">粉丝</string>
+    <string name="NextIcon">\></string>
+    <string name="Refund">退款消息更新请查看</string>
+    <string name="NewFeature">新功能上线了</string>
+    <string name="UserName">郑肉肉</string>
+    <string name="AttentionNum">15</string>
+    <string name="FansNum">124</string>
 </resources>
