@@ -39,8 +39,8 @@ public class CommunityActivity extends AppCompatActivity {
         Topic community_topic = new Topic();
         //添加fragment到集合中时注意顺序
         fragments.add(community_recommend);
-        fragments.add(community_catch_sight);
         fragments.add(community_popular);
+        fragments.add(community_catch_sight);
         fragments.add(community_topic);
 
         pager.setAdapter(new CommunityActivity.TextAdapter(getSupportFragmentManager(), titles, fragments));
