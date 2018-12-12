@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/MiddleMargin">
+
+    <TextView
+        android:id="@+id/userCenterTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/my"
+        android:textSize="@dimen/LargeTextSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userCenterAvatar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/avatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userCenterTitle" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/UserName"
+        android:textSize="@dimen/LargeTextSize"
+        app:layout_constraintBottom_toTopOf="@id/AttentionNum"
+        app:layout_constraintStart_toStartOf="@id/AttentionString"
+        app:layout_constraintTop_toTopOf="@id/userCenterAvatar"/>
+
+    <TextView
+        android:id="@+id/AttentionNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AttentionNum"
+        android:textSize="@dimen/MiddleTextSize"
+        app:layout_constraintBottom_toTopOf="@id/AttentionString"
+        app:layout_constraintStart_toStartOf="@id/AttentionString"
+        app:layout_constraintEnd_toEndOf="@id/AttentionString"/>
+
+    <TextView
+        android:id="@+id/AttentionString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Attention"
+        android:textSize="@dimen/MiddleTextSize"
+        app:layout_constraintStart_toEndOf="@id/userCenterAvatar"
+        app:layout_constraintBottom_toBottomOf="@id/userCenterAvatar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/MiddleTextSize"
+        android:text="@string/FansString"
+        android:id="@+id/fans"
+        app:layout_constraintStart_toEndOf="@id/AttentionString"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/userCenterAvatar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/FansNum"
+        android:textSize="@dimen/MiddleTextSize"
+        app:layout_constraintBottom_toTopOf="@id/fans"
+        app:layout_constraintEnd_toEndOf="@+id/fans"
+        app:layout_constraintStart_toStartOf="@id/fans" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/UserCenterCollection"
+        android:layout_marginTop="@dimen/LargeMargin"
+        android:layout_marginBottom="@dimen/LargeMargin"
+        app:layout_constraintTop_toBottomOf="@id/userCenterAvatar"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/MiddleTextSize"
+            android:text="@string/MyCollection"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/LittleMargin"
+            android:textSize="@dimen/MiddleTextSize"
+            android:text="@string/NextIcon"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/UserCenterOrder"
+        android:layout_marginTop="@dimen/LargeMargin"
+        android:layout_marginBottom="@dimen/LargeMargin"
+        app:layout_constraintTop_toBottomOf="@id/UserCenterCollection"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/MiddleTextSize"
+            android:text="@string/MyOrder"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/LittleTextSize"
+            android:textColor="@color/colorLightBlack"
+            android:text="@string/Refund"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginStart="@dimen/LittleMargin"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/MiddleTextSize"
+            android:text="@string/NextIcon"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/UserCenterWallet"
+        android:layout_marginTop="@dimen/LargeMargin"
+        android:layout_marginBottom="@dimen/LargeMargin"
+        app:layout_constraintTop_toBottomOf="@id/UserCenterOrder"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/MiddleTextSize"
+            android:text="@string/MyWallet"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/MiddleTextSize"
+            android:layout_marginStart="@dimen/LittleMargin"
+            android:text="@string/NextIcon"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ReceivedComment"
+        android:layout_marginTop="@dimen/LargeMargin"
+        android:layout_marginBottom="@dimen/LargeMargin"
+        app:layout_constraintTop_toBottomOf="@id/UserCenterWallet"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/MiddleTextSize"
+            android:text="@string/CommentsReceived"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_marginStart="@dimen/LargeMargin"
+            android:layout_gravity="center"
+            android:src="@color/colorRed"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/LittleMargin"
+            android:textSize="@dimen/MiddleTextSize"
+            android:text="@string/NextIcon"
+            android:textAlignment="textEnd"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/CustomizedCourse"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/LargeMargin"
+        android:layout_marginBottom="@dimen/LargeMargin"
+        app:layout_constraintTop_toBottomOf="@id/ReceivedComment"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/MiddleTextSize"
+            android:text="@string/CustomizedCourse"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/LittleMargin"
+            android:textSize="@dimen/MiddleTextSize"
+            android:text="@string/NextIcon"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Shared"
+        android:layout_marginTop="@dimen/LargeMargin"
+        android:layout_marginBottom="@dimen/LargeMargin"
+        app:layout_constraintTop_toBottomOf="@id/CustomizedCourse"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/MiddleTextSize"
+            android:text="@string/Share"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_marginStart="@dimen/LargeMargin"
+            android:layout_gravity="center"
+            android:src="@color/colorRed"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/LittleMargin"
+            android:textSize="@dimen/MiddleTextSize"
+            android:text="@string/NextIcon"
+            android:textAlignment="textEnd"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Setting"
+        android:layout_marginTop="@dimen/LargeMargin"
+        android:layout_marginBottom="@dimen/LargeMargin"
+        app:layout_constraintTop_toBottomOf="@id/Shared"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/MiddleTextSize"
+            android:text="@string/Setting"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/LittleTextSize"
+            android:textColor="@color/colorLightBlack"
+            android:text="@string/NewFeature"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/LittleMargin"
+            android:textSize="@dimen/MiddleTextSize"
+            android:text="@string/NextIcon"
+            android:textAlignment="textEnd"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
