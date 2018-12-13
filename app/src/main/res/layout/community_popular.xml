@@ -1,9 +1,232 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
-        android:layout_height="match_parent"
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:layout_width="match_parent"
-        android:text="popular"/>
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/popular1"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp" />
+
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:textSize="15sp"
+                    android:text="#适合亲子一起制作# 孩子也对沙拉很感兴趣"/>
+
+                <RelativeLayout
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/head1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+
+                    <TextView
+                        android:text="AG亲了爸爸"
+                        android:layout_toEndOf="@+id/head1"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/like1"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/popular2"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp" />
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textSize="15sp"
+                    android:text="闲下来终于可以做自己喜欢吃的沙拉，很幸福..."/>
+
+                <RelativeLayout
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/head2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+
+                    <TextView
+                        android:text="育儿新手"
+                        android:layout_toEndOf="@+id/head2"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/like2"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/popular3"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp" />
+
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:textSize="15sp"
+                    android:text="辣椒有点辣切的时候弄到眼睛了..."/>
+
+                <RelativeLayout
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/head3"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+
+                    <TextView
+                        android:text="大红辣椒不爱吃"
+                        android:layout_toEndOf="@+id/head3"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/like3"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/popular4"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp" />
+
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:textSize="15sp"
+                    android:text="#情侣悠闲的周末# 两个人在一起做做沙拉..."/>
+
+                <RelativeLayout
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/head4"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+
+                    <TextView
+                        android:text="职场女强人"
+                        android:layout_toEndOf="@+id/head4"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/like4"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
 </LinearLayout>
