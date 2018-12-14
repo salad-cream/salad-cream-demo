@@ -1,5 +1,6 @@
 package com.example.a75654.salad_cream.food_page;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -11,10 +12,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.astuetz.PagerSlidingTabStrip;
+import com.example.a75654.salad_cream.MainActivity;
 import com.example.a75654.salad_cream.R;
+import com.example.a75654.salad_cream.community.CommunityActivity;
+import com.example.a75654.salad_cream.store.store;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -61,6 +66,36 @@ public class FoodActivity extends AppCompatActivity{
         tabs.setDividerColor(Color.GRAY);
         //与ViewPager关联，这样指示器就可以和ViewPager联动
         tabs.setViewPager(pager);
+        ((ImageView)findViewById(R.id.foodicon2)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                Intent intent = new Intent(FoodActivity.this, FoodActivity.class);
+//                startActivity(intent);
+            }
+        });
+        ((ImageView)findViewById(R.id.store2)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FoodActivity.this, store.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                startActivity(intent);
+            }
+        });((ImageView)findViewById(R.id.community2)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FoodActivity.this, CommunityActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                startActivity(intent);
+            }
+        });
+        ((ImageView)findViewById(R.id.me2)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FoodActivity.this, MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                startActivity(intent);
+            }
+        });
     }
     class TextAdapter extends FragmentPagerAdapter {
         String[] titles;
