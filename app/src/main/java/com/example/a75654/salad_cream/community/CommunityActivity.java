@@ -25,9 +25,9 @@ public class CommunityActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_food);
-        PagerSlidingTabStrip tabs = (PagerSlidingTabStrip) findViewById(R.id.tabs);
-        ViewPager pager = (ViewPager) findViewById(R.id.pager);
+        setContentView(R.layout.activity_community);
+        PagerSlidingTabStrip tabs = (PagerSlidingTabStrip) findViewById(R.id.tabs2);
+        ViewPager pager = (ViewPager) findViewById(R.id.pager2);
         if (pager == null){
             Log.i("null","null");
         }
