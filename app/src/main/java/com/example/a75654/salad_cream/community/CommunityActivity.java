@@ -1,5 +1,6 @@
 package com.example.a75654.salad_cream.community;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -8,13 +9,17 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.astuetz.PagerSlidingTabStrip;
+import com.example.a75654.salad_cream.MainActivity;
 import com.example.a75654.salad_cream.R;
 import com.example.a75654.salad_cream.food_page.FoodActivity;
 import com.example.a75654.salad_cream.food_page.MaterialsFragment;
 import com.example.a75654.salad_cream.food_page.RecipesFragment;
 import com.example.a75654.salad_cream.food_page.SauceFragment;
+import com.example.a75654.salad_cream.store.store;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,9 +30,9 @@ public class CommunityActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_food);
-        PagerSlidingTabStrip tabs = (PagerSlidingTabStrip) findViewById(R.id.tabs);
-        ViewPager pager = (ViewPager) findViewById(R.id.pager);
+        setContentView(R.layout.community);
+        PagerSlidingTabStrip tabs = (PagerSlidingTabStrip) findViewById(R.id.tabs2);
+        ViewPager pager = (ViewPager) findViewById(R.id.pager2);
         if (pager == null){
             Log.i("null","null");
         }
@@ -63,6 +68,35 @@ public class CommunityActivity extends AppCompatActivity {
         tabs.setDividerColor(Color.GRAY);
         //与ViewPager关联，这样指示器就可以和ViewPager联动
         tabs.setViewPager(pager);
+
+        ((ImageView)findViewById(R.id.foodicon1)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CommunityActivity.this, FoodActivity.class);
+                startActivity(intent);
+            }
+        });
+        ((ImageView)findViewById(R.id.store1)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CommunityActivity.this, store.class);
+                startActivity(intent);
+            }
+        });((ImageView)findViewById(R.id.community1)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                Intent intent = new Intent(CommunityActivity.this, CommunityActivity.class);
+//                startActivity(intent);
+            }
+        });
+        ((ImageView)findViewById(R.id.me1)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CommunityActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
     class TextAdapter extends FragmentPagerAdapter {
         String[] titles;
