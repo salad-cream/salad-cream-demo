@@ -6,15 +6,15 @@
     tools:context=".MainActivity" xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <com.astuetz.PagerSlidingTabStrip
-        android:id="@+id/tabs"
+        android:id="@+id/tabs2"
         android:layout_width="match_parent"
         android:layout_height="48dip"
         app:pstsShouldExpand="true"
         />
 
     <android.support.v4.view.ViewPager
-        android:id="@+id/pager"
-        android:layout_below="@id/tabs"
+        android:id="@+id/pager2"
+        android:layout_below="@id/tabs2"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent" />
     <LinearLayout
@@ -29,55 +29,55 @@
             android:layout_height="50dp"
             android:layout_marginLeft="40dp"
             android:background="@drawable/foodicon"
-            android:id="@+id/foodicon2"/>
+            android:id="@+id/foodicon1"/>
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginLeft="40dp"
             android:background="@drawable/store"
-            android:id="@+id/store2"/>
+            android:id="@+id/store1"/>
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginLeft="40dp"
             android:background="@drawable/community"
-            android:id="@+id/community2"/>
+            android:id="@+id/community1"/>
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginLeft="40dp"
             android:background="@drawable/me"
-            android:id="@+id/me2"/>
+            android:id="@+id/me1"/>
     </LinearLayout>
     <android.support.v7.widget.LinearLayoutCompat
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:orientation="horizontal"
-        >
-        <TextView
-            android:layout_width="50dp"
-            android:layout_height="20dp"
-            android:layout_marginLeft="50dp"
-            android:textSize="15dp"
-            android:text="食材"/>
-        <TextView
-            android:layout_width="50dp"
-            android:layout_height="20dp"
-            android:layout_marginLeft="40dp"
-            android:textSize="15dp"
-            android:text="商城"/>
-        <TextView
-            android:layout_width="50dp"
-            android:layout_height="20dp"
-            android:layout_marginLeft="40dp"
-            android:textSize="15dp"
-            android:text="社区"/>
-        <TextView
-            android:layout_width="50dp"
-            android:layout_height="20dp"
-            android:layout_marginLeft="40dp"
-            android:textSize="15dp"
-            android:text="我的"/>
-    </android.support.v7.widget.LinearLayoutCompat>
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal"
+    >
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="15dp"
+        android:text="食材"/>
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="15dp"
+        android:text="商城"/>
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="15dp"
+        android:text="社区"/>
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="15dp"
+        android:text="我的"/>
+</android.support.v7.widget.LinearLayoutCompat>
 </RelativeLayout>
