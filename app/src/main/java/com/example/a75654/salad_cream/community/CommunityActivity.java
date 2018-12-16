@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.astuetz.PagerSlidingTabStrip;
+import com.bumptech.glide.Glide;
 import com.example.a75654.salad_cream.MainActivity;
 import com.example.a75654.salad_cream.R;
 import com.example.a75654.salad_cream.food_page.FoodActivity;
@@ -36,7 +37,10 @@ public class CommunityActivity extends AppCompatActivity {
         if (pager == null){
             Log.i("null","null");
         }
-
+        Glide.with(getApplicationContext()).load(R.mipmap.foodicon).into((ImageView) findViewById(R.id.foodicon1));
+        Glide.with(getApplicationContext()).load(R.mipmap.store).into((ImageView) findViewById(R.id.store1));
+        Glide.with(getApplicationContext()).load(R.mipmap.community).into((ImageView) findViewById(R.id.community1));
+        Glide.with(getApplicationContext()).load(R.mipmap.me).into((ImageView) findViewById(R.id.me1));
         fragments = new ArrayList<>();
         Recommend community_recommend = new Recommend();
         Popular community_popular = new Popular();

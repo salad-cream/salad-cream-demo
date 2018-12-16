@@ -16,6 +16,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.astuetz.PagerSlidingTabStrip;
+import com.bumptech.glide.Glide;
 import com.example.a75654.salad_cream.MainActivity;
 import com.example.a75654.salad_cream.R;
 import com.example.a75654.salad_cream.community.CommunityActivity;
@@ -36,7 +37,10 @@ public class FoodActivity extends AppCompatActivity{
         if (pager == null){
             Log.i("null","null");
         }
-
+        Glide.with(getApplicationContext()).load(R.mipmap.foodicon).into((ImageView) findViewById(R.id.foodicon2));
+        Glide.with(getApplicationContext()).load(R.mipmap.store).into((ImageView) findViewById(R.id.store2));
+        Glide.with(getApplicationContext()).load(R.mipmap.community).into((ImageView) findViewById(R.id.community2));
+        Glide.with(getApplicationContext()).load(R.mipmap.me).into((ImageView) findViewById(R.id.me2));
         fragments = new ArrayList<>();
         RecipesFragment recipesFragment = new RecipesFragment();
         MaterialsFragment materialsFragment = new MaterialsFragment();

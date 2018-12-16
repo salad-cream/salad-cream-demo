@@ -272,25 +272,21 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginLeft="40dp"
-            android:background="@drawable/foodicon"
             android:id="@+id/foodicon4"/>
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginLeft="40dp"
-            android:background="@drawable/store"
             android:id="@+id/store4"/>
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginLeft="40dp"
-            android:background="@drawable/community"
             android:id="@+id/community4"/>
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginLeft="40dp"
-            android:background="@drawable/me"
             android:id="@+id/me4"/>
 
     </LinearLayout>

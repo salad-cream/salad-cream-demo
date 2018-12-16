@@ -28,25 +28,21 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginLeft="40dp"
-            android:background="@drawable/foodicon"
             android:id="@+id/foodicon1"/>
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginLeft="40dp"
-            android:background="@drawable/store"
             android:id="@+id/store1"/>
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginLeft="40dp"
-            android:background="@drawable/community"
             android:id="@+id/community1"/>
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginLeft="40dp"
-            android:background="@drawable/me"
             android:id="@+id/me1"/>
     </LinearLayout>
     <android.support.v7.widget.LinearLayoutCompat
